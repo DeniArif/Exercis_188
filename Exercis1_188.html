@@ -35,3 +35,82 @@
             padding: 10px;
             background-color: #f9f9f9;
         }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-container {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            text-transform: uppercase;
+        }
+        .message {
+            text-align: center;
+            color: green;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Warmindo</h2>
+    <p>Di bawah ini adalah menu makanan yang tersedia di kantin:</p>
+    <img src="menu.jpg" alt="Menu Kantin">
+    <div class="submit-container">
+        <form action="#" method="post" onsubmit="showMessage(event)">
+            <input type="submit" value="Pesan Sekarang">
+        </form>
+    </div>
+    <table id="resultTable" style="display: none;">
+        <tr>
+            <th>Nama Menu</th>
+            <th>Harga</th>
+            <th>Ketersediaan</th>
+        </tr>
+        <tr>
+            <td>Nasi Goreng</td>
+            <td>Rp 15.000</td>
+            <td>Tersedia</td>
+        </tr>
+        <tr>
+            <td>Mie Ayam</td>
+            <td>Rp 12.000</td>
+            <td>Tersedia</td>
+        </tr>
+        <tr>
+            <td>Gado-gado</td>
+            <td>Rp 10.000</td>
+            <td>Tersedia</td>
+        </tr>
+    </table>
+</div>
+
+<p class="message" id="message">Pesanan Anda berhasil dicatat. Terima kasih!</p>
