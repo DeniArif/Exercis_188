@@ -116,3 +116,5 @@
 <p class="message" id="message">Pesanan Anda berhasil dicatat. Terima kasih!</p>
 <script>
     function showMessage(event) {
+        event.preventDefault(); // Prevent form submission
+        document.getElementById("resultTable").style.display = "table";
